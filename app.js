@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var monk = require('monk');
 var paginate = require('express-paginate');
+var w3 = require('w3');
+var jquery = require('jquery');
 // var bootstrap = require('bootstrap');
 var db = monk('mongodb://caintl:sunnyvaleca@ds111718.mlab.com:11718/heroku_q16kqr8d');
 
