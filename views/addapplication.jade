@@ -1,0 +1,63 @@
+doctype html
+html
+    head(id=_id)
+        title= "Add an Application for " + fullname
+        link(rel='stylesheet', href='/stylesheets/w3.css')
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.css')
+        link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2-bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        
+    body
+        block content
+
+        // Wrapper
+        #wrapper.w3-container
+            form.w3-container
+                br
+
+                h1.w3-text-pink
+                    b Apply a New School for !{fullname}
+                
+                br
+                br
+
+                p 
+                    label.w3-text-black Fields with * are required
+                br
+
+
+                #selectSchool
+                    label.w3-text-green#labelSelectSchool
+                        |*School to Apply
+                        br
+                        select.w3-select#selectSchoolList()
+                            option
+
+                br
+                br
+                br
+                #applicationStatus
+                    label.w3-text-green#labelApplicationStatus
+                        |*Initial Application Status
+                        br
+                        select.w3-select#selectApplicationStatus
+                            option(value='Initiated', selected="selected") Initiated (刚刚创建)
+                            | &#x9;
+                            option(value='Under Processing') Under Processing (已开始申请)
+                            | &#x9;
+                            option(value='Admitted') Admitted (已录取)
+                br
+                br
+                br
+                p
+                    button.w3-btn.w3-green.w3-xxxlarge#btnAddApplication(type='button') Add
+
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/select2/3.5.0/select2.min.js')
+        script(type='text/javascript', src='/javascripts/addapplication.js')
+        
+    
+    // script(type='text/javascript').
+    // $(function() {
+    // $(".chosen").chosen();
+    // });

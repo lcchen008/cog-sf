@@ -1,0 +1,247 @@
+doctype html
+html
+  title= title
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='/stylesheets/w3.css')
+  // link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+  
+  style.
+    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+    .mySlides {display:none}
+    .w3-tag, .fa {cursor:pointer}
+    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+    div.main {
+    background: rgba(60, 90, 90, 0.75);
+    color: white
+    }
+  body
+    // Links (sit on top)
+    .w3-top
+      .w3-row.w3-large
+        .w3-col.s3
+          a.w3-btn-block.w3-light-grey(href='#') Home
+        .w3-col.s3
+          a.w3-btn-block.w3-light-grey(href='#plans') Options
+        .w3-col.s3
+          a.w3-btn-block.w3-light-grey(href='#about') Our Team
+        .w3-col.s3
+          a.w3-btn-block.w3-light-grey(href='#contact') Contact
+    // Content
+    .w3-content(style='max-width:1100px;margin-top:80px;margin-bottom:80px')
+      .w3-panel
+        h1
+          .w3-text-green.w3-xxlarge
+            b California International
+        p 
+          b End-to-End International High School Education
+      // Slideshow
+      .w3-container
+        .w3-display-container.mySlides
+          img(src='/images/application.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-32
+            #app.main.w3-padding-small.w3-animate-bottom 
+              b Professional School Application
+        .w3-display-container.mySlides
+          img(src='/images/hostfamily.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-32
+            #host.main.w3-padding-small.w3-animate-bottom 
+              b High-quality Host Family Match
+        .w3-display-container.mySlides
+          img(src='/images/rafting.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-32
+            #ex.main.w3-padding-small.w3-animate-bottom 
+              b Extracurricular Activities
+        .w3-display-container.mySlides
+          img(src='/images/graduation.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-32
+            #ex.main.w3-padding-small.w3-animate-bottom 
+              b Excellence in both Studying and Personality
+        // Slideshow next/previous buttons
+        .w3-container.w3-dark-grey.w3-padding-8.w3-xlarge
+          .w3-left(onclick='plusDivs(-1)')
+            i.fa.fa-arrow-circle-left.w3-hover-text-teal
+          .w3-right(onclick='plusDivs(1)')
+            i.fa.fa-arrow-circle-right.w3-hover-text-teal
+          .w3-center
+            span.demodots
+            span.demodots
+            span.demodots
+            span.demodots
+      // Grid
+      .w3-row.w3-container
+        .w3-center.w3-padding-64
+          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 End-to-End Service
+        .w3-col.l3.m6.w3-light-grey.w3-container.w3-padding-12
+          h3 School Application
+          p
+            | Worry-free professional school selection, docs preparation, application, and status tracking. You provide your basic information and test scores, and we do the rest.
+        .w3-col.l3.m6.w3-grey.w3-container.w3-padding-12
+          h3 Host Family Matching
+          p
+            | Our U.S. team members are engaged in face-to-face host family interviews and connection, providing high quality host family matching, guranteeing the safety and convenience.
+        .w3-col.l3.m6.w3-dark-grey.w3-container.w3-padding-12
+          h3 Extracurricular Activities
+          p
+            | We organize constructive activities, aiming to maintain students' mental health, and provide the opportunities for their personal quality development.
+        .w3-col.l3.m6.w3-black.w3-container.w3-padding-12
+          h3 Positive Psychology Counseling
+          p
+            | Our U.S. team member, positive psychologist Jimmy Wang, frequently provides lectures and one-on-one psychological counseling. Our goal is to deliver students who are positive, progressive, and confident.
+
+
+      // Grid
+      #plans.w3-row-padding
+        .w3-center.w3-padding-64
+          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 Plan Options
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            li.w3-yellow.w3-xlarge.w3-padding-32 Basic Plan
+            li.w3-padding-16 School Application
+            li.w3-light-grey.w3-padding-24
+              button.w3-btn.w3-black.w3-large.w3-padding-tiny Choose
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            li.w3-green.w3-xlarge.w3-padding-32 Mid-range Plan
+            li.w3-padding-16 School Application
+            li.w3-padding-16 Host Family Matching
+            li.w3-padding-16 Daily-life Counseling and Feedback
+            li.w3-light-grey.w3-padding-24
+              button.w3-btn.w3-black.w3-large.w3-padding-tiny Choose
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            li.w3-purple.w3-xlarge.w3-padding-32 High-end Plan
+            li.w3-padding-16 School Application
+            li.w3-padding-16 Host Family Matching
+            li.w3-padding-16 Daily-life Counseling and Feedback
+            li.w3-padding-16 High-quality Extracurricular Activities
+            li.w3-padding-16 Positive Psychological Counseling
+            li.w3-light-grey.w3-padding-24
+              button.w3-btn.w3-black.w3-large.w3-padding-tiny Choose
+      // Grid
+      #about.w3-row-padding
+        .w3-center.w3-padding-64
+          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 Our Team
+        .w3-third.w3-margin-bottom
+          .w3-card-4
+            img(src='/images/lydia.jpg', alt='John', style='width:100%')
+            .w3-container
+              h3 Lydia Wang 
+              a(href="https://cn.linkedin.com/in/静秋-lydia-王-4bbb268a")
+                i.w3-xlarge.fa.fa-linkedin.w3-hover-text-indigo
+              p.w3-opacity Founder, CEO
+              p
+                | Lydia has been working in international high school education industry for 2 years. Her major focus has been on sales, school connections, and student daily-life counseling.
+              p
+                button.w3-btn-block Contact Me
+
+        .w3-third.w3-margin-bottom
+          .w3-card-4
+            img(src='/images/sunny.jpg', alt='John', style='width:100%')
+            .w3-container
+              h3 Sunny Zheng
+              a(href="https://cn.linkedin.com/in/sunny-zheng-30b59695")
+                i.w3-xlarge.fa.fa-linkedin.w3-hover-text-indigo
+              p.w3-opacity Co-Founder, COO
+              p
+                | Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+              p
+                button.w3-btn-block Contact Me
+
+        .w3-third.w3-margin-bottom
+          .w3-card-4
+            img(src='/images/jimmy.jpg', alt='Mike', style='width:100%')
+            .w3-container
+              h3 Jimmy Wang
+              a(href="https://www.linkedin.com/in/jinghui-wang-57b99128")
+                i.w3-xlarge.fa.fa-linkedin.w3-hover-text-indigo
+              p.w3-opacity Positive Psychology Professional
+              p
+                | Dr. Wang has been doing research in positive psychology for a few years, and has accumulated a significant amount of knowledge and technic in advising people who have psychological issues. He is especially interested in taking care of the young who have mental disorder. 
+              p
+                button.w3-btn-block Contact Me
+        .w3-third.w3-margin-bottom
+          .w3-card-4
+            img(src='/images/joel.jpg', alt='Jane', style='width:100%')
+            .w3-container
+              h3 Joel Chen
+              a(href="http://www.google.com")
+                i.w3-xlarge.fa.fa-linkedin.w3-hover-text-indigo
+              p.w3-opacity Programmer
+              p
+                | Joel is an experienced software engineer. He is very talented and professional in creating information systems, easing business logics. Joel is the developer for the information system that can track and interact with the students.
+              p
+                button.w3-btn-block Contact Me
+      // Contact
+      #contact.w3-center.w3-padding-64
+        span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 Contact Us
+      form.w3-container(action='form.asp', target='_blank')
+        .w3-group
+          label Full Name
+          input.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Name', required='')
+        .w3-group
+          label Email
+          input.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Email', required='')
+        .w3-group
+          label Subject
+          input.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Subject', required='')
+        .w3-group
+          label Message Content
+          input.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message', required='')
+        button.w3-btn.w3-btn-block.w3-padding-12(type='submit') Send
+    // Footer
+    footer.w3-container.w3-padding-32.w3-light-grey.w3-center
+      // h4 Footer
+      a.w3-btn.w3-padding.w3-black.w3-margin(href='#')
+        i.fa.fa-arrow-up.w3-margin-right
+        | Go to Top
+      .w3-xlarge.w3-section
+        i.fa.fa-facebook-official.w3-hover-text-indigo
+        i.fa.fa-instagram.w3-hover-text-purple
+        i.fa.fa-snapchat.w3-hover-text-yellow
+        i.fa.fa-pinterest-p.w3-hover-text-red
+        i.fa.fa-twitter.w3-hover-text-light-blue
+        i.fa.fa-linkedin.w3-hover-text-indigo
+      p
+        | Powered by 
+        b Joel Chen
+    script.
+      // Slideshow
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+      function currentDiv(n) {
+      showDivs(slideIndex = n);
+      }
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demodots");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-white";
+      }
+
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 4000); // Change image every 2 seconds
+      }

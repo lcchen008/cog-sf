@@ -1,0 +1,54 @@
+doctype html
+html
+	head(id=_id)
+		title= fullname
+		link(rel='stylesheet', href='/stylesheets/w3.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/css/font-awesome.min.css')
+	body
+		block content
+
+		// Wrapper
+		#wrapper.w3-container
+			br
+			br
+			#cardStudentInfo.w3-card-4
+				header.w3-container.w3-green
+					h1 Student Information
+				
+				br
+				br
+
+				#basicInfo.w3-container
+					img.w3-left.w3-circle.w3-margin-right(src='/images/img_avatar2.png', style='width:160px')
+					span.w3-xxxlarge.editable(data-url="/student/fullname/"+_id, style='font-weight:bold') !{fullname}
+					br
+					span.w3-xxxlarge Date of Birth: 
+					span.w3-xxxlarge.editable(data-type="date",data-url='/student/dob/'+_id,) !{dob}
+					br
+					span.w3-xxxlarge.editable(data-type="select",data-url='/student/gender/'+_id,data-data='[["Male", "Male"], ["Female", "Female"]]') !{gender}
+				hr
+				#basicInfo.w3-container
+					i.fa.fa-envelope.w3-xxxlarge
+					span.w3-xxxlarge  
+					span.w3-xxxlarge.editable(data-url="/student/email/"+_id) !{email}
+					br
+					i.fa.fa-phone.w3-xxxlarge
+					span.w3-xxxlarge     
+					span.w3-xxxlarge.editable(data-url="/student/phone/"+_id) !{phone}
+					br
+					i.fa.fa-home.w3-xxxlarge
+					span.w3-xxxlarge  
+					span.w3-xxxlarge.editable(data-type="textarea",data-url="/student/address/"+_id) !{address}
+			br
+			br
+			a.w3-btn.w3-purple.w3-xxlarge(href='addapplication/' + _id) + Application
+
+			#applications
+
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+	// script(src='/javascripts/index.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/jinplace/1.2.1/jinplace.min.js')
+	script(src='/javascripts/student.js')
+	script.
+		$('.editable').jinplace();

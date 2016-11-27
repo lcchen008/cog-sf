@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/w3.css')
+		
+	body
+		block content
+
+		// Wrapper
+		#wrapper.w3-container
+			br
+			// Add student
+			a.w3-btn.w3-green.w3-xxlarge(href='addstudent/') + Add Student
+			// USER LIST
+			br 
+			br
+
+			table.w3-table-all.w3-xxlarge.w3-card-4#tableStudents
+				thead
+					tr.w3-green
+						th UserName
+						th Email
+						th Delete?
+						//th Send Email
+				tbody
+			br
+			br
+			// /USER LIST
+
+			// ADD USER
+
+			// /WRAPPER
+
+	script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+	script(src='/javascripts/index.js')

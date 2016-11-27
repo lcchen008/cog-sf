@@ -1,0 +1,87 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/w3.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content
+
+        // Wrapper
+        #wrapper.w3-container
+            form.w3-container
+                br
+
+                h1.w3-text-pink
+                    b ADD A STUDENT
+                
+                br
+                br
+
+                p 
+                    label.w3-text-black Fields with * are required
+                br
+                p
+                    label.w3-text-green#labelStudentName
+                        *Student Name
+                        br
+                        input.w3-input#inputStudentName(name='name', type='text', required='')
+                br
+                br
+                br
+                p
+                    label.w3-text-green#labelStudentEmail
+                        |*Email Address
+                        br
+                        input.w3-input#inputStudentEmail(name='email', type='text', required='')
+                br
+                br
+                br
+
+                p
+                    label.w3-text-green#labelStudentPhone
+                        |Phone Number
+                        br
+                        input.w3-input#inputStudentPhone(name='phone', type='text')
+                br
+                br
+                br
+
+                p
+                    label.w3-text-green#labelStudentAddress
+                        |Address
+                        br
+                        input.w3-input#inputStudentAddress(name='address', type='text')
+                br
+                br
+                br
+
+                #studentGender
+                    label.w3-text-green#labelStudentGender
+                        |*Gender
+                        br
+                        select.w3-select#selectStudentGender
+                            option(value='', selected="selected") Select a Gender
+                            | &#x9;
+                            option(value='Female') Female (女)
+                            | &#x9;
+                            option(value='Male') Male (男)
+                br
+                br
+                br
+
+                #studentBirthday    
+                    label.w3-text-green#labelStudentDob
+                        |*Date of Birth
+                        br
+                        br
+                        input#inputStudentDob(type='date', name='bday', value='')
+                br
+                br
+                br
+                p
+                    button.w3-btn.w3-green.w3-xxxlarge#btnAddStudent(type='button') Add
+
+
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/addstudent.js')

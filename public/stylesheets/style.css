@@ -1,0 +1,180 @@
+html {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+label {
+	font-size: 2em;
+}
+
+/*
+#wrapper {
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	margin:0 auto;
+  	width: 100%;
+}
+*/
+
+#wrapper h2 {
+	font-size: 2em;
+}
+
+
+#userList {
+	margin:0 auto;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/*
+#wrapper table {
+	margin:0 auto;
+}
+
+#userList table,
+#schoolList table {
+	border-collapse:separate;
+	border-spacing:1px;
+	background:#CCC;
+	width:800px;
+	font-size:2em;
+	// margin: 0 auto;
+}
+#userList table th,
+#schoolList table th {
+	background:#EEE;
+	font-weight:600;
+	padding:10px 20px;
+	text-align:center;
+}
+#userList table tbody,
+#schoolList table tbody {
+	padding:0; margin:0;
+	border-collapse:collapse;
+	border-spacing:0px;
+}
+#userList table td,
+#schoolList table td {
+	background:#FFF;
+	padding:5px 10px;
+	text-align:center;
+	padding:5px 10px;
+	height:100px;
+}
+*/
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+#addUser input {
+	width: 375px;
+	height: 60px;
+	border: 1;
+	font-size: 18pt;
+}
+
+#btnAddUser {
+	background-color: #4CAF50;
+    border: 0;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+// Ctr panel
+#ctrpanelbuttons .w3-btn{
+	horizontal-align: middle;
+	display: block;
+	margin:auto;
+}
+
+[class^='select2'] {
+  border-radius: 0px !important;
+  border: 0px;
+}
+
+
+/*
+input::-webkit-input-placeholder { font-size: 18pt; color: #555; }
+input::-moz-placeholder { font-size: 18pt; color: #555; }
+input:-ms-input-placeholder { font-size: 18pt; color: #555; }
+input:-moz-placeholder { font-size: 18pt; color: #555; }
+
+input.other::-webkit-input-placeholder { font-size: 12pt; color: red; }
+input.other::-moz-placeholder { font-size: 12pt; color: red; }
+input.other:-ms-input-placeholder { font-size: 12pt; color: red; }
+input.other:-moz-placeholder { font-size: 12pt; color: red; }*/
