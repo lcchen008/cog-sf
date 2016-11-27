@@ -9,7 +9,7 @@ var mongo = require('mongodb');
 var monk = require('monk');
 var paginate = require('express-paginate');
 // var bootstrap = require('bootstrap');
-var db = monk('localhost:27017/nodetest2');
+var db = monk('mongodb://lcchen008:!a1q2w3e@ds111718.mlab.com:11718/heroku_q16kqr8d');
 
 var routes = require('./routes/ctrpanel');
 var users = require('./routes/users');
