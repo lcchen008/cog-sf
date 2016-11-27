@@ -10,6 +10,7 @@ var monk = require('monk');
 var paginate = require('express-paginate');
 var w3 = require('w3');
 var jquery = require('jquery');
+var path = require('path');
 // var bootstrap = require('bootstrap');
 var db = monk('mongodb://caintl:sunnyvaleca@ds111718.mlab.com:11718/heroku_q16kqr8d');
 
@@ -56,7 +57,7 @@ app.use('/index', index);
 app.use('/applications', applications);
 app.use('/login', login);
 app.use('/main', main);
-
+app.use('/jqueryscripts', express.static(path.join(__dirname, 'node_modules/jquery/dist')));
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

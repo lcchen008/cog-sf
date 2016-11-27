@@ -146,10 +146,6 @@ function deleteUser(event) {
     if (confirmation === true) {
 
         // If they did, do our delete
-        var delete_vars = {
-            
-        }
-
         $.ajax({
             type: 'DELETE',
             url: '/users/deleteuser/' + $(this).attr('rel')
@@ -169,8 +165,10 @@ function deleteUser(event) {
 
     }
     else {
+
         // If they said no to the confirm, do nothing
         return false;
+
     }
 
 };
