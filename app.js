@@ -47,7 +47,7 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use('/', routes);
+app.use('/', main);
 app.use('/users', users);
 app.use('/student', student);
 app.use('/addstudent', addstudent);
