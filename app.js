@@ -11,8 +11,9 @@ var paginate = require('express-paginate');
 var w3 = require('w3');
 var jquery = require('jquery');
 var path = require('path');
+const redis = require('redis-clustr');
 // var bootstrap = require('bootstrap');
-var db = monk('mongodb://caintl:sunnyvaleca@ds111718.mlab.com:11718/heroku_q16kqr8d');
+var db = monk('mongodb://10.8.1.13:27017/students');
 
 var routes = require('./routes/ctrpanel');
 var users = require('./routes/users');
@@ -24,16 +25,22 @@ var schools = require('./routes/schools');
 var applications = require('./routes/applications');
 var login = require('./routes/login');
 var main = require('./routes/main');
-
+var mongoose = require('mongoose');
 var app = express();
 var session = require('express-session');
+
+
+// set up multer for storing uploaded files
+ 
+var multer = require('multer');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'icon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -94,6 +101,12 @@ app.use(session({
     resave: true,
     saveUninitialized: true
 }));
+
+const port = 3001
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 
 /*
 // Authentication and Authorization Middleware

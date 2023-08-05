@@ -12,6 +12,48 @@ $(document).ready(function() {
             $("#btnAddApplication").click();
         }
     });
+
+
+    $(document).on("change", ".w3-input", function() {
+        var fileObj = $(".w3-input")[0];
+        var img = document.getElementById('profilepic');
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            if (reader.readyState === 2) {
+                img.src = e.target.result;
+                //console.log.(img.src);
+            }
+        }
+        reader.readAsDataURL(fileObj.files[0]);
+
+        // upload the image to server
+        var student_id = document.getElementsByTagName("head")[0].getAttribute("id");
+        // Use AJAX to post the object to our adduser service
+        
+        // Create a new FormData object
+        const formData = new FormData();
+
+        // Add the file to the FormData object
+        formData.append('file', fileObj.files[0]);
+
+        //console.log(formData.get('file'));
+
+        $.ajax({
+            type: 'POST',
+            data: formData,
+            url: '/student/profilepic/' + student_id,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                // The file was uploaded successfully
+            },
+            error: function (xhr, status, error) {
+                // There was an error uploading the file
+            }
+        }).done(function( response ) {
+
+        });
+    });
 });
 
 // Fill the applications data for the student

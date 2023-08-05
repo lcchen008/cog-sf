@@ -6,12 +6,11 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/css/font-awesome.min.css')
 	body
-		block content
 
 		// Wrapper
 		#wrapper.w3-container
 			br
-			br
+
 			#cardStudentInfo.w3-card-4
 				header.w3-container.w3-green
 					h1 Student Information
@@ -20,13 +19,20 @@ html
 				br
 
 				#basicInfo.w3-container
-					img.w3-left.w3-circle.w3-margin-right(src='/images/img_avatar2.png', style='width:160px')
+					
+					form(class='w3-form', method='post', action='/upload', enctype='multipart/form-data', style='border:none;')
+						label(for='image', style='text-decoration: none;')
+							img.w3-left.w3-circle.w3-margin-right(id = 'profilepic', src='/student/profilepic/'+_id, style='width:160px; border: none; cursor: pointer;', alt='Choose file')
+						input(id = 'profilepicfile', type='file', name = 'image', id='image', class='w3-input', style='display: none;')
+
+					br
 					span.w3-xxxlarge.editable(data-url="/student/fullname/"+_id, style='font-weight:bold') !{fullname}
 					br
 					span.w3-xxxlarge Date of Birth: 
 					span.w3-xxxlarge.editable(data-type="date",data-url='/student/dob/'+_id,) !{dob}
 					br
 					span.w3-xxxlarge.editable(data-type="select",data-url='/student/gender/'+_id,data-data='[["Male", "Male"], ["Female", "Female"]]') !{gender}
+
 				hr
 				#basicInfo.w3-container
 					i.fa.fa-envelope.w3-xxxlarge
