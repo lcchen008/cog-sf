@@ -56,7 +56,7 @@ html
               b 8月相聚Palo Alto福音聚会
 
         // Slideshow next/previous buttons
-        .w3-container.w3-light-grey.w3-padding-8.w3-xlarge
+        .w3-container.w3-light-grey.w3-padding-8.w3-large
           .w3-left(onclick='plusDivs(-1)')
             i.fa.fa-arrow-circle-left.w3-hover-text-teal
           .w3-right(onclick='plusDivs(1)')
@@ -131,6 +131,7 @@ html
             li.w3-padding-16 时间：周日 11:00AM - 2:00PM PST
             li.w3-padding-24 南湾分区聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
             li.w3-padding-24 东湾分区聚会地址：41690 Joyce Ave, Fremont, CA 94539
+            li.w3-padding-24 伯克利分区聚会地址：1945 Berkeley Way, Berkeley, CA 94704
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-xlarge.w3-padding-20 聚会日程
@@ -228,7 +229,7 @@ html
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1} 
       x[slideIndex-1].style.display = "block"; 
-      setTimeout(carousel, 8000); // Change image every 2 seconds
+      setTimeout(carousel, 10000); // Change image every 10 seconds
       }
 
     script(src='/jqueryscripts/jquery.min.js')
