@@ -37,11 +37,20 @@ html
           h3 旧金山湾区教会
       // Slideshow
       .w3-container
+
+
+
         .w3-display-container.mySlides
-          img(src='/images/2024.png', style='width:100%')
+          img(src='/images/20240331.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-24
+            #app.main.w3-padding-tiny.w3-animate-fading
+              b 2024/03/31
+
+        .w3-display-container.mySlides
+          img(src='/images/20240121.png', style='width:100%')
           .w3-display-bottomleft.w3-container.w3-padding-24
             #app.main.w3-padding-tiny.w3-animate-fading 
-              b 2024/01/21-叶仁全弟兄到访湾区教会 
+              b 2024/01/21-叶仁全弟兄到访湾区教会
 
         .w3-display-container.mySlides
           img(src='/images/sheep.jpg', style='width:100%')
@@ -95,7 +104,17 @@ html
       // Grid
       #events.w3-row-padding.w3
         .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 近期教会活动 
+          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 近期教会活动
+
+
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            .w3-card-4
+              img(src='/images/20240331.jpg', alt='Brother Visit', style='width:100%')
+              .w3-container
+                h3 弟兄们访问湾区教会 - 《湾区人读圣经吗？》
+                p.w3-opacity 2024年3月31日，1:30PM-4:00PM
+                p.w3-opacity Address: 2215 Plumleigh Dr, Fremont, CA, 94539
         .w3-third.w3-margin-bottom
             ul.w3-ul.w3-border.w3-center.w3-hover-shadow
               .w3-card-4
@@ -128,21 +147,23 @@ html
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-xlarge.w3-padding-20 聚会时间和地址
-            li.w3-padding-16 时间：周日 11:00AM - 2:00PM PST
-            li.w3-padding-24 南湾分区聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
+            li.w3-padding-16 时间：周日 11:00 - 12:30 PST
             li.w3-padding-24 东湾分区聚会地址：41690 Joyce Ave, Fremont, CA 94539
+            li.w3-padding-16 时间：周日 14:00 - 16:00 PST
+            li.w3-padding-24 南湾分区聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
+            li.w3-padding-16 时间：周日 19:00 - 21:00 PST
             li.w3-padding-24 伯克利分区聚会地址：1945 Berkeley Way, Berkeley, CA 94704
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-xlarge.w3-padding-20 聚会日程
-            li.w3-padding-16 生命诗歌享受、擘饼
-            li.w3-padding-16 圣经、信息、见证
-            li.w3-padding-16 祷告
+            li.w3-padding-16 擘饼
+            li.w3-padding-16 圣经、诗歌、信息、见证等
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-xlarge.w3-padding-20 聚会服事项目
-            li.w3-padding-16 儿童主日学
-            li.w3-padding-16 午餐饭食服事
+            li.w3-padding-16 儿童服事
+            li.w3-padding-16 饭食服事
+            li.w3-padding-16 场地服事
 
       // Grid
       #pursuit.w3-row-padding.w3
@@ -153,15 +174,15 @@ html
             .w3-card-4
               img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
               .w3-container
-                h3 倪柝声弟兄属灵书报信息追求 - 《人的破碎与灵的出来》 
+                h3 倪柝声弟兄属灵书报信息追求 - 《教会的事务》
                 p.w3-opacity Zoom在线追求 周三晚上9:00PM PST
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/genesis.png', alt='Genesis', style='width:100%')
-              .w3-container
-                h3 旧约圣经 《创世纪》 追求
-                p.w3-opacity Zoom在线追求 周六早上9:00AM PST
+        //.w3-third.w3-margin-bottom
+        //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+        //    .w3-card-4
+        //      img(src='/images/genesis.png', alt='Genesis', style='width:100%')
+        //      .w3-container
+        //        h3 旧约圣经 《创世纪》 追求
+        //        p.w3-opacity Zoom在线追求 周六早上9:00AM PST
 
       // Contact
       #contact.w3-center.w3-padding-64
