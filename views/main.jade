@@ -39,6 +39,17 @@ html
       .w3-container
 
 
+        .w3-display-container.mySlides
+          img(src='/images/sheep.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-24
+            #host.main.w3-padding-tiny
+              b 欢迎来到湾区教会
+
+        .w3-display-container.mySlides
+          img(src='/images/20240505-1.jpg', style='width:100%')
+          .w3-display-bottomleft.w3-container.w3-padding-24
+            #app.main.w3-padding-tiny.w3-animate-fading
+              b 2024/05/05
 
         .w3-display-container.mySlides
           img(src='/images/20240331-1.jpg', style='width:100%')
@@ -51,12 +62,6 @@ html
           .w3-display-bottomleft.w3-container.w3-padding-24
             #app.main.w3-padding-tiny.w3-animate-fading 
               b 2024/01/21-叶仁全弟兄到访湾区教会
-
-        .w3-display-container.mySlides
-          img(src='/images/sheep.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #host.main.w3-padding-tiny
-              b 欢迎来到湾区教会
 
         .w3-display-container.mySlides
           img(src='/images/event.jpg', style='width:100%')
@@ -107,12 +112,21 @@ html
           span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 近期教会活动
 
 
+
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            .w3-card-4
+              img(src='/images/20240505.jpg', alt='Seattle Visit', style='width:100%')
+              .w3-container
+                h3 《卷向何方？》
+                p.w3-opacity 2024年5月5日，2:30PM-4:00PM
+                p.w3-opacity Address: 4000 Middlefield Rd U7, Palo Alto,94303
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             .w3-card-4
               img(src='/images/20240331.jpg', alt='Brother Visit', style='width:100%')
               .w3-container
-                h3 弟兄们访问湾区教会 - 《湾区人读圣经吗？》
+                h3 弟兄们访问湾区的教会 - 《湾区人读圣经吗？》
                 p.w3-opacity 2024年3月31日，1:30PM-4:00PM
                 p.w3-opacity Address: 2215 Plumleigh Dr, Fremont, CA, 94539
         .w3-third.w3-margin-bottom
@@ -120,25 +134,25 @@ html
               .w3-card-4
                 img(src='/images/bro-ye-visit.jpg', alt='Brother Ye Visit', style='width:100%')
                 .w3-container
-                  h3 叶仁全弟兄访问湾区教会 - 《从湾区基督徒的眼光来看2024年的挑战和盼望》 
+                  h3 叶仁全弟兄访问湾区的教会 - 《从湾区基督徒的眼光来看2024年的挑战和盼望》
                   p.w3-opacity 2024年1月21日，1:30PM-4:30PM
                   p.w3-opacity Address: 41690 Joyce Ave, Fremont, CA 94539 
-        .w3-third.w3-margin-bottom
-            ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-              .w3-card-4
-                img(src='/images/sept-event.png', alt='Sept Gospel Gathering', style='width:70%')
-                .w3-container
-                  h3 2023年9月Palo Alto福音聚会
-                  p.w3-opacity 2023年9月23日，3:00PM-4:00PM
-                  p.w3-opacity Address: Cubberley Community Center, Room U7, 4000 Middlefield Rd, Palo Alto, 94303
-        .w3-third.w3-margin-bottom
-            ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-              .w3-card-4
-                img(src='/images/event.jpg', alt='August Gospel Gathering', style='width:70%')
-                .w3-container
-                  h3 2023年8月Palo Alto福音聚会
-                  p.w3-opacity 2023年8月12日，3:00 PM-4:00PM
-                  p.w3-opacity Address: Cubberley Community Center, Room H6, 4000 Middlefield Rd, Palo Alto, 94303
+        //.w3-third.w3-margin-bottom
+        //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+        //      .w3-card-4
+        //        img(src='/images/sept-event.png', alt='Sept Gospel Gathering', style='width:100%')
+        //        .w3-container
+        //          h3 2023年9月Palo Alto福音聚会
+        //          p.w3-opacity 2023年9月23日，3:00PM-4:00PM
+        //          p.w3-opacity Address: Cubberley Community Center, Room U7, 4000 Middlefield Rd, Palo Alto, 94303
+        //.w3-third.w3-margin-bottom
+        //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+        //      .w3-card-4
+        //        img(src='/images/event.jpg', alt='August Gospel Gathering', style='width:100%')
+        //        .w3-container
+        //          h3 2023年8月Palo Alto福音聚会
+        //          p.w3-opacity 2023年8月12日，3:00 PM-4:00PM
+        //          p.w3-opacity Address: Cubberley Community Center, Room H6, 4000 Middlefield Rd, Palo Alto, 94303
 
       // Grid
       #worship.w3-row-padding
@@ -148,11 +162,11 @@ html
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-dark-grey.w3-xlarge.w3-padding-20 聚会时间和地址
             li.w3-light-grey.w3-padding-16 周日 11:00 - 12:30 PST
-            li.w3-padding-24 东湾分区聚会地址：41690 Joyce Ave, Fremont, CA 94539
+            li.w3-padding-24 东湾聚会地址：41690 Joyce Ave, Fremont, CA 94539
             li.w3-light-grey.w3-padding-16 周日 14:00 - 16:00 PST
-            li.w3-padding-24 南湾分区聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
+            li.w3-padding-24 南湾聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
             li.w3-light-grey.w3-padding-16 周日 19:00 - 21:00 PST
-            li.w3-padding-24 伯克利分区聚会地址：1945 Berkeley Way, Berkeley, CA 94704
+            li.w3-padding-24 伯克利聚会地址：1945 Berkeley Way, Berkeley, CA 94704
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-dark-grey.w3-xlarge.w3-padding-20 聚会日程
@@ -172,10 +186,12 @@ html
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             .w3-card-4
-              img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
+              //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
               .w3-container
-                h3 倪柝声弟兄属灵书报信息追求 - 《教会的事务》
-                p.w3-opacity Zoom在线追求 周三晚上9:00PM PST
+                h3 《如何读圣经？》
+                p.w3-opacity Zoom在线追求 周三晚上 10:00PM ～ 10:40PM  PST
+                p.w3-opacity zoom链接：
+                a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09')
         //.w3-third.w3-margin-bottom
         //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
         //    .w3-card-4
