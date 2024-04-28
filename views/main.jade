@@ -189,46 +189,53 @@ html
             .w3-card-4
               //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
               .w3-container
-                h3 周三晚上 zoom "如何读圣经？"
-                p.w3-opacity 时间：10:00PM ～ 10:40PM  PST
-                a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入
+                h3 周三晚上 "如何读圣经？"
+                p.w3-opacity 时间：10:00PM ～ 10:40PM PST
+                a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入ZOOM
                 p.w3-opacity
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             .w3-card-4
               //img(src='/images/genesis.png', alt='Genesis', style='width:100%')
               .w3-container
-                h3 周五中午 zoom "马太福音研读"
-                  p.w3-opacity 时间：12:30PM ～ 13:10PM  PST
-                  a(href='https://stanford.zoom.us/j/9419039038?pwd=MkJFdlVBeWVDT0M3WHdmTUNaV2RWUT09&omn=94144449018') 点击进入
-                  p.w3-opacity
+                h3 周五中午 "马太福音研读"
+                p.w3-opacity 时间：12:30PM ～ 13:10PM PST
+                a(href='https://stanford.zoom.us/j/9419039038?pwd=MkJFdlVBeWVDT0M3WHdmTUNaV2RWUT09&omn=94144449018') 点击进入ZOOM
+                p.w3-opacity
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             .w3-card-4
               //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
               .w3-container
-                h3 周二周四晚上 zoom "速读圣经"
-                p.w3-opacity 时间：20:00PM ～ 21:00PM  PST
-                a(href='https://us06web.zoom.us/j/2951264737?pwd=TKsvRrT6rZ3u4opAvAhaM06xS9wEmj.1&omn=88274732200') 点击进入
+                h3 周二周四晚上 "速读圣经"
+                p.w3-opacity 时间：20:00PM ～ 21:00PM PST
+                a(href='https://us06web.zoom.us/j/2951264737?pwd=TKsvRrT6rZ3u4opAvAhaM06xS9wEmj.1&omn=88274732200') 点击进入ZOOM
                 p.w3-opacity
       // Contact
       #contact.w3-center.w3-padding-64
         span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
       form.w3-container
         .w3-group
-          label#labelFullName 姓名 
+          label#labelFullName 姓名(*)
           input#inputFullName.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Name', required='')
         .w3-group
-          label#labelEmail 邮箱 
+          label#labelEmail 邮箱 (*)
           input#inputEmail.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Email', required='')
         .w3-group
-          label#labelSubject 主题 
-          input#inputSubject.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Subject', required='')
+          label#labelPhone 电话
+          input#inputPhone.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Phone')
         .w3-group
           label#labelMessage 留言 
-          input#inputMessage.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message', required='')
-        button#submitContact.w3-btn.w3-btn-block.w3-padding-12(type='button') 发送 
-    // Footer
+          input#inputMessage.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message')
+        button#submitContact.w3-btn.w3-btn-block.w3-padding-12(type='button') 发送
+
+        span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 关注我们
+          img(src='/images/instagram.png', style='width:100%')
+          img(src='/images/instagram.png', style='width:100%')
+          img(src='/images/instagram.png', style='width:100%')
+
+
+  // Footer
     footer.w3-container.w3-padding-32.w3-light-grey.w3-center
       // h4 Footer
       a.w3-btn.w3-padding.w3-black.w3-margin(href='#')
