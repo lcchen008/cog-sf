@@ -5,7 +5,7 @@ html
   link(rel='stylesheet', href='/stylesheets/w3.css')
   // link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
-  
+
   style.
     html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     .mySlides {display:none}
@@ -22,18 +22,18 @@ html
         .w3-col.s3
           a.w3-btn-block.w3-light-grey(href='#') 主页
         .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#worship') 主日聚会 
+          a.w3-btn-block.w3-light-grey(href='#worship') 主日聚会
         .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#pursuit') 周中追求 
+          a.w3-btn-block.w3-light-grey(href='#pursuit') 周中追求
         .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#contact') 联系我们 
+          a.w3-btn-block.w3-light-grey(href='#contact') 联系我们
     // Content
     .w3-content(style='max-width:1100px;margin-top:80px;margin-bottom:80px')
       .w3-panel
         h1
           .w3-text-black.w3-xxlarge
-            b Church of God in SF Bay Area 
-        p 
+            b Church of God in SF Bay Area
+        p
           h3 旧金山湾区教会
       // Slideshow
       .w3-container
@@ -60,7 +60,7 @@ html
         .w3-display-container.mySlides
           img(src='/images/20240121.png', style='width:100%')
           .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading 
+            #app.main.w3-padding-tiny.w3-animate-fading
               b 2024/01/21-叶仁全弟兄到访湾区教会
 
         //.w3-display-container.mySlides
@@ -137,7 +137,7 @@ html
                 .w3-container
                   h3 叶仁全弟兄访问湾区的教会 - 《从湾区基督徒的眼光来看2024年的挑战和盼望》
                   p.w3-opacity 2024年1月21日，1:30PM-4:30PM
-                  p.w3-opacity Address: 41690 Joyce Ave, Fremont, CA 94539 
+                  p.w3-opacity Address: 41690 Joyce Ave, Fremont, CA 94539
         //.w3-third.w3-margin-bottom
         //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
         //      .w3-card-4
@@ -158,27 +158,22 @@ html
       // Grid
       #worship.w3-row-padding
         .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 主日聚会信息
+          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 主日聚会时间和地址
         .w3-third.w3-margin-bottom
           ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-dark-grey.w3-xlarge.w3-padding-20 聚会时间和地址
-            li.w3-light-grey.w3-padding-16 周日 11:00 - 12:30 PST
+            li.w3-light-grey.w3-padding-16 周日 10:30 - 12:30 PST
             li.w3-padding-24 东湾聚会地址：41690 Joyce Ave, Fremont, CA 94539
+            a(href='https://maps.app.goo.gl/UtdQ7tDcgtRtyfAB8' ) 点击导航
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-padding-16 周日 14:00 - 16:00 PST
             li.w3-padding-24 南湾聚会地址：515 Rhodes Drive, Palo Alto, CA 94303
+            a(href='https://maps.app.goo.gl/NioNL8m5Qpfcftxq5' ) 点击导航
+        .w3-third.w3-margin-bottom
+          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
             li.w3-light-grey.w3-padding-16 周日 19:00 - 21:00 PST
             li.w3-padding-24 伯克利聚会地址：1945 Berkeley Way, Berkeley, CA 94704
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-dark-grey.w3-xlarge.w3-padding-20 聚会日程
-            li.w3-padding-16 擘饼
-            li.w3-padding-16 圣经、诗歌、信息、见证等
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-dark-grey.w3-xlarge.w3-padding-20 聚会服事项目
-            li.w3-padding-16 儿童服事
-            li.w3-padding-16 饭食服事
-            li.w3-padding-16 场地服事
+            a(href='https://maps.app.goo.gl/ajegY4QKfHKrdFB58' ) 点击导航
 
       // Grid
       #pursuit.w3-row-padding.w3
@@ -217,17 +212,19 @@ html
         .w3-center.w3-padding-64
           span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
         .w3-center.w3-margin-bottom
-          .w3-card-6
+          .w3-center.w3-card-6
             p.w3-opacity
               a(href='https://forms.gle/Bsvrer4Zd3NxHAwt9') 跳转到Google Sheet中填写
-
-      //follow
-      //#follow.w3-right.w3-padding-64
-      //  span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 关注我们
-      //    .w3-card2
-      //      img(src='/images/instagram.png', style='width: 25px; height: 25px;')
-      //      img(src='/images/YouTube.png', style='width: 25px; height: 25px;')
-      //      img(src='/images/Facebook.png', style='width: 25px; height: 25px;')
+        //.w3-half.w3-margin-bottom
+        //  ul.w3-ul.w3-center.w3-hover-shadow
+        //    a(href='https://www.Facebook.........')
+        //      img(alt='Facebook' src='https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png' style='width: 39px; height: 39px; object-fit: cover;')
+        //    a(href='https://www.youtube.........')
+        //      img(alt='youtube' src='https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png' style='width: 39px; height: 39px; object-fit: cover;')
+        //    a(href='https://www.instagram.........')
+        //      img(alt='instagram' src='https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png' style='width: 39px; height: 39px; object-fit: cover;')
+        //    a(href='https://www.wechat.........')
+        //      img(alt='wechat' src='https://static.wixstatic.com/media/5728cf_2218328feec545dea230f703a0cba800~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5728cf_2218328feec545dea230f703a0cba800~mv2.png' style='width: 39px; height: 39px; object-fit: cover;')
 
 
       //#contact.w3-center.w3-padding-64
@@ -246,11 +243,6 @@ html
       //    label#labelMessage 留言
       //    input#inputMessage.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message')
       //  button#submitContact.w3-btn.w3-btn-block.w3-padding-12(type='button') 发送
-      //
-      //  span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 关注我们
-      //    img(src='/images/instagram.png', style='width: 25px; height: 25px;')
-      //    img(src='/images/instagram.png', style='width: 25px; height: 25px;')
-      //    img(src='/images/instagram.png', style='width: 25px; height: 25px;')
 
 
     //Footer
@@ -258,12 +250,12 @@ html
       // h4 Footer
       a.w3-btn.w3-padding.w3-black.w3-margin(href='#')
         i.fa.fa-arrow-up.w3-margin-right
-        | 回到顶部 
+        | 回到顶部
       p
-        | © 
+        | ©
         b 2024 Church of God in SF Bay Area
     script.
-      
+
 
       // Slideshow
       var slideIndex = 1;
@@ -297,11 +289,11 @@ html
       var i;
       var x = document.getElementsByClassName("mySlides");
       for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1} 
-      x[slideIndex-1].style.display = "block"; 
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
       setTimeout(carousel, 10000); // Change image every 10 seconds
       }
 
