@@ -1,363 +1,385 @@
 doctype html
 html
-  title= title
-  meta(name='viewport', content='width=device-width, initial-scale=1')
-  link(rel='stylesheet', href='/stylesheets/w3.css')
-  // link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/stylesheets/w3.css')
+    // link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css')
 
-  style.
-    html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-    .mySlides {display:none}
-    .w3-tag, .fa {cursor:pointer}
-    .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-    div.main {
-    background: rgba(60, 90, 90, 0.75);
-    color: white
-    }
-  body
-    // Links (sit on top)
-    .w3-top
-      .w3-row.w3-large
-        .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#') 主页
-        .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#worship') 主日聚会
-        .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#pursuit') 周中追求
-        .w3-col.s3
-          a.w3-btn-block.w3-light-grey(href='#contact') 联系我们
-    // Content
-    .w3-content(style='max-width:1100px;margin-top:80px;margin-bottom:80px')
-      .w3-panel
-        h1
-          .w3-text-black.w3-xxlarge
-            b Church of God in SF Bay Area
-        p
-          h3 旧金山湾区教会
-      // Slideshow
-      .w3-container
+    style.
+        html, body, h1, h2, h3, h4 {
+            font-family: "Lato", sans-serif
+        }
 
+        .mySlides {
+            display: none
+        }
 
-        .w3-display-container.mySlides
-          img(src='/images/sheep.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #host.main.w3-padding-tiny
-              b 欢迎来到湾区教会
+        .w3-tag, .fa {
+            cursor: pointer
+        }
 
-        .w3-display-container.mySlides
-          img(src='/images/who_are_we.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading
-              b 倪柝声弟兄《我们是什么》
+        .w3-tag {
+            height: 15px;
+            width: 15px;
+            padding: 0;
+            margin-top: 6px
+        }
 
-        .w3-display-container.mySlides
-          img(src='/images/who_are_we1.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading
-              b 倪柝声弟兄《我们是什么》
-
-        .w3-display-container.mySlides
-          img(src='/images/who_are_we2.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading
-              b 倪柝声弟兄《我们是什么》
-
-        .w3-display-container.mySlides
-          img(src='/images/who_are_we3.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading
-              b
-
-        .w3-display-container.mySlides
-          img(src='/images/who_are_we4.jpg', style='width:100%')
-          .w3-display-bottomleft.w3-container.w3-padding-24
-            #app.main.w3-padding-tiny.w3-animate-fading
-              b
-
-        //.w3-display-container.mySlides
-        //  img(src='/images/event.jpg', style='width:100%')
-        //  .w3-display-bottomleft.w3-container.w3-padding-24
-        //    #ex.main.w3-padding-tiny
-        //      b 8月相聚Palo Alto福音聚会
-
-        // Slideshow next/previous buttons
-        .w3-container.w3-light-grey.w3-padding-8.w3-large
-          .w3-left(onclick='plusDivs(-1)')
-            i.fa.fa-arrow-circle-left.w3-hover-text-teal
-          .w3-right(onclick='plusDivs(1)')
-            i.fa.fa-arrow-circle-right.w3-hover-text-teal
-          .w3-center
-            span.demodots
-            span.demodots
-            span.demodots
-            span.demodots
-      // Grid
-      //.w3-row-padding
-      //  .w3-center.w3-padding-64
-      //    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 圣经经节享受
-      //  .w3-third.w3-margin-bottom
-      //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-      //      li.w3-light-grey.w3-xlarge.w3-padding-20 罗马书 1:28-31
-      //      p
-      //        |他们既然故意不认识神，神就任凭他们存邪僻的心，行那些不合理的事；装满了各样不义、邪恶、贪婪、恶毒，满心是嫉妒、凶杀、争竞、诡诈、毒恨；又是谗毁的、背後说人的、怨恨神的、侮慢人的、狂傲的、自夸的、捏造恶事的、违背父母的。无知的，背约的，无亲情的，不怜悯人的。
-      //  .w3-third.w3-margin-bottom
-      //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-      //      li.w3-light-grey.w3-xlarge.w3-padding-20 哥林多前书 1:18-21
-      //      p
-      //        |因为十字架的道理，在那灭亡的人为愚拙。在我们得救的人却为神的大能。就如经上所记，我要灭绝智慧人的智慧，废弃聪明人的聪明。智慧人在哪里？文士在哪里？这世上的辩士在哪里？神岂不是叫这世上的智慧变成愚拙吗？世人凭自己的智慧，既不认识神，神就乐意用人所当作愚拙的道理，拯救那些信的人。这就是神的智慧了。
-      //  .w3-third.w3-margin-bottom
-      //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-      //      li.w3-light-grey.w3-xlarge.w3-padding-20 马太福音 7:13-14
-      //      p
-      //        | 你们要进窄门，因为引到灭亡，那门是宽的，路是大的，进去的人也多；引到永生，那门是窄的，路是小的，找着的人也少。
-      //  .w3-third.w3-margin-bottom
-      //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-      //      li.w3-light-grey.w3-xlarge.w3-padding-20 以赛亚书 51:12-13
-      //      p
-      //        |惟有我，是安慰你们的。你是谁？竟怕那必死的人，怕那要变如草的世人，却忘记铺张诸天、立定地基、创造你的耶和华。
+        div.main {
+            background: rgba(60, 90, 90, 0.75);
+            color: white
+        }
+    body
+        // Links (sit on top)
+        .w3-top
+            .w3-row.w3-large
+                .w3-col.s3
+                    a.w3-btn-block.w3-light-grey(href='#') 主页
+                .w3-col.s3
+                    a.w3-btn-block.w3-light-grey(href='#worship') 主日聚会
+                .w3-col.s3
+                    a.w3-btn-block.w3-light-grey(href='#pursuit') 周中追求
+                .w3-col.s3
+                    a.w3-btn-block.w3-light-grey(href='#contact') 联系我们
+        // Content
+        .w3-content(style='max-width:1100px;margin-top:80px;margin-bottom:80px')
+            .w3-panel
+                h1
+                    .w3-text-black.w3-xxlarge
+                        b Church of God in SF Bay Area
+                p
+                    h3 旧金山湾区教会
+            // Slideshow
+            .w3-container
 
 
-      // Grid
-      #events.w3-row-padding.w3
-        .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 福音聚会安排
+                .w3-display-container.mySlides
+                    img(src='/images/sheep.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #host.main.w3-padding-tiny
+                            b 欢迎来到湾区教会
+
+                .w3-display-container.mySlides
+                    img(src='/images/who_are_we.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #app1.main.w3-padding-tiny.w3-animate-fading
+                            b 倪柝声弟兄《我们是什么》
+
+                .w3-display-container.mySlides
+                    img(src='/images/who_are_we1.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #app2.main.w3-padding-tiny.w3-animate-fading
+                            b 倪柝声弟兄《我们是什么》
+
+                .w3-display-container.mySlides
+                    img(src='/images/who_are_we2.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #app3.main.w3-padding-tiny.w3-animate-fading
+                            b 倪柝声弟兄《我们是什么》
+
+                .w3-display-container.mySlides
+                    img(src='/images/who_are_we3.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #app4.main.w3-padding-tiny.w3-animate-fading
+                            b
+
+                .w3-display-container.mySlides
+                    img(src='/images/who_are_we4.jpg', style='width:100%')
+                    .w3-display-bottomleft.w3-container.w3-padding-24
+                        #app5.main.w3-padding-tiny.w3-animate-fading
+                            b
+
+                //.w3-display-container.mySlides
+                //  img(src='/images/event.jpg', style='width:100%')
+                //  .w3-display-bottomleft.w3-container.w3-padding-24
+                //    #ex.main.w3-padding-tiny
+                //      b 8月相聚Palo Alto福音聚会
+
+                // Slideshow next/previous buttons
+                .w3-container.w3-light-grey.w3-padding-8.w3-large
+                    .w3-left(onclick='plusDivs(-1)')
+                        i.fa.fa-arrow-circle-left.w3-hover-text-teal
+                    .w3-right(onclick='plusDivs(1)')
+                        i.fa.fa-arrow-circle-right.w3-hover-text-teal
+                    .w3-center
+                        span.demodots
+                        span.demodots
+                        span.demodots
+                        span.demodots
+            // Grid
+            //.w3-row-padding
+            //  .w3-center.w3-padding-64
+            //    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 圣经经节享受
+            //  .w3-third.w3-margin-bottom
+            //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            //      li.w3-light-grey.w3-xlarge.w3-padding-20 罗马书 1:28-31
+            //      p
+            //        |他们既然故意不认识神，神就任凭他们存邪僻的心，行那些不合理的事；装满了各样不义、邪恶、贪婪、恶毒，满心是嫉妒、凶杀、争竞、诡诈、毒恨；又是谗毁的、背後说人的、怨恨神的、侮慢人的、狂傲的、自夸的、捏造恶事的、违背父母的。无知的，背约的，无亲情的，不怜悯人的。
+            //  .w3-third.w3-margin-bottom
+            //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            //      li.w3-light-grey.w3-xlarge.w3-padding-20 哥林多前书 1:18-21
+            //      p
+            //        |因为十字架的道理，在那灭亡的人为愚拙。在我们得救的人却为神的大能。就如经上所记，我要灭绝智慧人的智慧，废弃聪明人的聪明。智慧人在哪里？文士在哪里？这世上的辩士在哪里？神岂不是叫这世上的智慧变成愚拙吗？世人凭自己的智慧，既不认识神，神就乐意用人所当作愚拙的道理，拯救那些信的人。这就是神的智慧了。
+            //  .w3-third.w3-margin-bottom
+            //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            //      li.w3-light-grey.w3-xlarge.w3-padding-20 马太福音 7:13-14
+            //      p
+            //        | 你们要进窄门，因为引到灭亡，那门是宽的，路是大的，进去的人也多；引到永生，那门是窄的，路是小的，找着的人也少。
+            //  .w3-third.w3-margin-bottom
+            //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+            //      li.w3-light-grey.w3-xlarge.w3-padding-20 以赛亚书 51:12-13
+            //      p
+            //        |惟有我，是安慰你们的。你是谁？竟怕那必死的人，怕那要变如草的世人，却忘记铺张诸天、立定地基、创造你的耶和华。
 
 
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/20240721.jpg', alt='20240721', style='width:100%')
-              .w3-container
-                h3 《圣灵充满》
-                p.w3-opacity 2024年7月21日，2:30PM-4:00PM
-                p.w3-opacity Address:
-                  a(href='https://maps.app.goo.gl/g68iqXP5Nm78A16TA') 4000 Middlefield Rd E5, Palo Alto, 94303（点击导航）
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/Be_patient.jpg', alt='2024', style='width:100%')
-              //.w3-container
-                h3 《旧金山教会特别聚会》
-                p.w3-opacity 2024年7月21日，2:30PM-4:30PM
-                p.w3-opacity Address:
-                  a(href='https://maps.app.goo.gl/fM6nbY5iA8rMYH316') 4000 Middlefield Rd Room E5, Palo Alto, 94303（点击导航）
-      // Grid
-      #events_past.w3-row-padding.w3
-        .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 已过教会活动
+            // Grid
+            #events.w3-row-padding.w3
+                .w3-center.w3-padding-64
+                    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 福音聚会安排
 
 
-        //.w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/20240721.jpg', alt='20240721', style='width:100%')
-              .w3-container
-                h3 《旧金山教会特别聚会》
-                p.w3-opacity 2024年7月21日，2:30PM-4:30PM
-                p.w3-opacity Address:
-                  a(href='https://maps.app.goo.gl/xf33BqZDFx7tp74R7') 4000 Middlefield Rd E5, Palo Alto,94303
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/20240505.jpg', alt='Seattle Visit', style='width:100%')
-              .w3-container
-                h3 《卷向何方？》
-                p.w3-opacity 2024年5月5日，2:30PM-4:00PM
-                //p.w3-opacity Address:
-                  a(href='https://maps.app.goo.gl/fM6nbY5iA8rMYH316') 4000 Middlefield Rd U7, Palo Alto,94303
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-card-4
-              img(src='/images/20240331.jpg', alt='Brother Visit', style='width:100%')
-              .w3-container
-                h3 《湾区人读圣经吗？》
-                p.w3-opacity 2024年3月31日，1:30PM-4:00PM
-                //p.w3-opacity Address: 2215 Plumleigh Dr, Fremont, CA, 94539
-        .w3-third.w3-margin-bottom
-            ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-              .w3-card-4
-                img(src='/images/bro-ye-visit.jpg', alt='Brother Ye Visit', style='width:100%')
-                .w3-container
-                  h3 《从湾区基督徒的眼光来看2024年的挑战和盼望》
-                  p.w3-opacity 2024年1月21日，1:30PM-4:30PM
-                  //p.w3-opacity Address: 41690 Joyce Ave, Fremont, CA 94539
-        //.w3-third.w3-margin-bottom
-        //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-        //      .w3-card-4
-        //        img(src='/images/sept-event.png', alt='Sept Gospel Gathering', style='width:100%')
-        //        .w3-container
-        //          h3 2023年9月Palo Alto福音聚会
-        //          p.w3-opacity 2023年9月23日，3:00PM-4:00PM
-        //          p.w3-opacity Address: Cubberley Community Center, Room U7, 4000 Middlefield Rd, Palo Alto, 94303
-        //.w3-third.w3-margin-bottom
-        //    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-        //      .w3-card-4
-        //        img(src='/images/event.jpg', alt='August Gospel Gathering', style='width:100%')
-        //        .w3-container
-        //          h3 2023年8月Palo Alto福音聚会
-        //          p.w3-opacity 2023年8月12日，3:00 PM-4:00PM
-        //          p.w3-opacity Address: Cubberley Community Center, Room H6, 4000 Middlefield Rd, Palo Alto, 94303
-
-      // Grid
-      #worship.w3-row-padding
-        .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 主日聚会时间和地址
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-light-grey.w3-padding-16 东湾聚会时间和地点
-            li.w3-padding-24
-              p 时间：周日上午 10:30 - 12:30 PST
-              p 地点：
-                a(href='https://maps.app.goo.gl/UtdQ7tDcgtRtyfAB8') Fremont（点击导航）
-
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-light-grey.w3-padding-16 南湾聚会时间和地点
-            li.w3-padding-24
-              p 时间：周日下午 14:00 - 16:00 PST
-              p 地点：
-                a(href='https://maps.app.goo.gl/NioNL8m5Qpfcftxq5' ) Palo Alto（点击导航）
-        .w3-third.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            li.w3-light-grey.w3-padding-16 伯克利聚会时间和地点
-            li.w3-padding-24
-              p 时间：周日晚上 19:00 - 21:00 PST
-              p 地点：
-                a(href='https://maps.app.goo.gl/ajegY4QKfHKrdFB58' ) Berkeley（点击导航）
-
-      // Grid
-      #pursuit.w3-row-padding.w3
-        .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 周中追求
-        .w3-center.w3-margin-bottom
-          ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-            .w3-center.w3-card-4
-              // img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
-              .w3-container
-                h3 周中有各种读经小组，校园小组，家庭小组...
-                h3 如果您想要参加，请在下面的"联系我们"中填写您的信息，我们会尽快回复您！
-
-                //p.w3-opacity 时间：10:00PM ～ 10:40PM PST
-                //a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入ZOOM
-                //p.w3-opacity
-        //.w3-third.w3-margin-bottom
-        //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-        //    .w3-card-4
-        //      //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
-        //      .w3-container
-        //        h3 周三晚上 "如何读圣经？"
-        //        p.w3-opacity 时间：10:00PM ～ 10:40PM PST
-        //        //a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入ZOOM
-        //        p.w3-opacity
-        //.w3-third.w3-margin-bottom
-        //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-        //    .w3-card-4
-        //      //img(src='/images/genesis.png', alt='Genesis', style='width:100%')
-        //      .w3-container
-        //        h3 周五中午 "马太福音研读"
-        //        p.w3-opacity 时间：12:30PM ～ 13:10PM PST
-        //        //a(href='https://stanford.zoom.us/j/9419039038?pwd=MkJFdlVBeWVDT0M3WHdmTUNaV2RWUT09&omn=94144449018') 点击进入ZOOM
-        //        p.w3-opacity
-        //.w3-third.w3-margin-bottom
-        //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
-        //    .w3-card-4
-        //      //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
-        //      .w3-container
-        //        h3 周二周四晚上 "速读圣经"
-        //        p.w3-opacity 时间：20:00PM ～ 21:00PM PST
-        //        //a(href='https://us06web.zoom.us/j/2951264737?pwd=TKsvRrT6rZ3u4opAvAhaM06xS9wEmj.1&omn=88274732200') 点击进入ZOOM
-        //        p.w3-opacity
-      // Contact
-
-      #contact.w3-padding-64
-        .w3-center.w3-padding-64
-          span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
-        .w3-center.w3-margin-bottom
-          .w3-center.w3-card-6
-            p.w3-opacity
-              a(href='https://forms.gle/Bsvrer4Zd3NxHAwt9') 跳转到Google Sheet中填写
-        //.w3-half.w3-margin-bottom
-        //  ul.w3-ul.w3-center.w3-hover-shadow
-        //    a(href='https://www.Facebook.........')
-        //      img(alt='Facebook' src='https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png' style='width: 39px; height: 39px; object-fit: cover;')
-        //    a(href='https://www.youtube.........')
-        //      img(alt='youtube' src='https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png' style='width: 39px; height: 39px; object-fit: cover;')
-        //    a(href='https://www.instagram.........')
-        //      img(alt='instagram' src='https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png' style='width: 39px; height: 39px; object-fit: cover;')
-        //    a(href='https://www.wechat.........')
-        //      img(alt='wechat' src='https://static.wixstatic.com/media/5728cf_2218328feec545dea230f703a0cba800~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5728cf_2218328feec545dea230f703a0cba800~mv2.png' style='width: 39px; height: 39px; object-fit: cover;')
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-card-4
+                            img(src='/images/20240721.jpg', alt='20240721', style='width:100%')
+                            .w3-container
+                                h3 《旧金山湾区教会特别聚会》
+                                p.w3-opacity 2024年7月21日，2:30PM-4:00PM
+                                p.w3-opacity Address:
+                                    a(href='https://maps.app.goo.gl/g68iqXP5Nm78A16TA') 4000 Middlefield Rd E5, Palo Alto, 94303（点击导航）
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-card-4
+                            img(src='/images/Be_patient.jpg', alt='2024', style='width:100%')
+                            //.w3-container
+                              h3 《旧金山教会特别聚会》
+                              p.w3-opacity 2024年7月21日，2:30PM-4:30PM
+                              p.w3-opacity Address:
+                                a(href='https://maps.app.goo.gl/fM6nbY5iA8rMYH316') 4000 Middlefield Rd Room E5, Palo Alto, 94303（点击导航）
+            // Grid
+            #events_past.w3-row-padding.w3
+                .w3-center.w3-padding-64
+                    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 已过教会活动
 
 
-      //#contact.w3-center.w3-padding-64
-      //  span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
-      //form.w3-container
-      //  .w3-group
-      //    label#labelFullName 姓名(*)
-      //    input#inputFullName.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Name', required='')
-      //  .w3-group
-      //    label#labelEmail 邮箱 (*)
-      //    input#inputEmail.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Email', required='')
-      //  .w3-group
-      //    label#labelPhone 电话
-      //    input#inputPhone.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Phone')
-      //  .w3-group
-      //    label#labelMessage 留言
-      //    input#inputMessage.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message')
-      //  button#submitContact.w3-btn.w3-btn-block.w3-padding-12(type='button') 发送
+                //.w3-third.w3-margin-bottom
+                  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                    .w3-card-4
+                      img(src='/images/20240721.jpg', alt='20240721', style='width:100%')
+                      .w3-container
+                        h3 《旧金山教会特别聚会》
+                        p.w3-opacity 2024年7月21日，2:30PM-4:30PM
+                        p.w3-opacity Address:
+                          a(href='https://maps.app.goo.gl/xf33BqZDFx7tp74R7') 4000 Middlefield Rd E5, Palo Alto,94303
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-card-4
+                            img(src='/images/20240505.jpg', alt='Seattle Visit', style='width:100%')
+                            .w3-container
+                                h3 《卷向何方？》
+                                p.w3-opacity 2024年5月5日，2:30PM-4:00PM
+                                //p.w3-opacity Address:
+                                  a(href='https://maps.app.goo.gl/fM6nbY5iA8rMYH316') 4000 Middlefield Rd U7, Palo Alto,94303
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-card-4
+                            img(src='/images/20240331.jpg', alt='Brother Visit', style='width:100%')
+                            .w3-container
+                                h3 《湾区人读圣经吗？》
+                                p.w3-opacity 2024年3月31日，1:30PM-4:00PM
+                                //p.w3-opacity Address: 2215 Plumleigh Dr, Fremont, CA, 94539
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-card-4
+                            img(src='/images/bro-ye-visit.jpg', alt='Brother Ye Visit', style='width:100%')
+                            .w3-container
+                                h3 《从湾区基督徒的眼光来看2024年的挑战和盼望》
+                                p.w3-opacity 2024年1月21日，1:30PM-4:30PM
+                                //p.w3-opacity Address: 41690 Joyce Ave, Fremont, CA 94539
+                //.w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                      .w3-card-4
+                        img(src='/images/sept-event.png', alt='Sept Gospel Gathering', style='width:100%')
+                        .w3-container
+                          h3 2023年9月Palo Alto福音聚会
+                          p.w3-opacity 2023年9月23日，3:00PM-4:00PM
+                          p.w3-opacity Address: Cubberley Community Center, Room U7, 4000 Middlefield Rd, Palo Alto, 94303
+                //.w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                      .w3-card-4
+                        img(src='/images/event.jpg', alt='August Gospel Gathering', style='width:100%')
+                        .w3-container
+                          h3 2023年8月Palo Alto福音聚会
+                          p.w3-opacity 2023年8月12日，3:00 PM-4:00PM
+                          p.w3-opacity Address: Cubberley Community Center, Room H6, 4000 Middlefield Rd, Palo Alto, 94303
+
+            // Grid
+            #worship.w3-row-padding
+                .w3-center.w3-padding-64
+                    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 主日聚会时间和地址
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        li.w3-light-grey.w3-padding-16 东湾聚会时间和地点
+                        li.w3-padding-24
+                            p 时间：周日上午 10:30 - 12:30 PST
+                            p 地点：
+                                a(href='https://maps.app.goo.gl/UtdQ7tDcgtRtyfAB8') Fremont（点击导航）
+
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        li.w3-light-grey.w3-padding-16 南湾聚会时间和地点
+                        li.w3-padding-24
+                            p 时间：周日下午 14:00 - 16:00 PST
+                            p 地点：
+                                a(href='https://maps.app.goo.gl/NioNL8m5Qpfcftxq5' ) Palo Alto（点击导航）
+                .w3-third.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        li.w3-light-grey.w3-padding-16 伯克利聚会时间和地点
+                        li.w3-padding-24
+                            p 时间：周日晚上 18:30 - 20:30 PST
+                            p 地点：
+                                a(href='https://maps.app.goo.gl/Q9pTkRj9XYjQzx4eA' ) Berkeley（点击导航）
+
+            // Grid
+            #pursuit.w3-row-padding.w3
+                .w3-center.w3-padding-64
+                    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 周中追求
+                .w3-center.w3-margin-bottom
+                    ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                        .w3-center.w3-card-4
+                            // img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
+                            .w3-container
+                                h3 周中有各种读经小组，校园小组，家庭小组...
+                                h3 如果您想要参加，请在下面的"联系我们"中填写您的信息，我们会尽快回复您！
+
+                                //p.w3-opacity 时间：10:00PM ～ 10:40PM PST
+                                //a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入ZOOM
+                                //p.w3-opacity
+                //.w3-third.w3-margin-bottom
+                //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                //    .w3-card-4
+                //      //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
+                //      .w3-container
+                //        h3 周三晚上 "如何读圣经？"
+                //        p.w3-opacity 时间：10:00PM ～ 10:40PM PST
+                //        //a(href='https://us02web.zoom.us/j/2165510515?pwd=VWZmaWNsUGF0ajQ3Lzd4L0I2dk94QT09') 点击进入ZOOM
+                //        p.w3-opacity
+                //.w3-third.w3-margin-bottom
+                //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                //    .w3-card-4
+                //      //img(src='/images/genesis.png', alt='Genesis', style='width:100%')
+                //      .w3-container
+                //        h3 周五中午 "马太福音研读"
+                //        p.w3-opacity 时间：12:30PM ～ 13:10PM PST
+                //        //a(href='https://stanford.zoom.us/j/9419039038?pwd=MkJFdlVBeWVDT0M3WHdmTUNaV2RWUT09&omn=94144449018') 点击进入ZOOM
+                //        p.w3-opacity
+                //.w3-third.w3-margin-bottom
+                //  ul.w3-ul.w3-border.w3-center.w3-hover-shadow
+                //    .w3-card-4
+                //      //img(src='/images/ni.jpg', alt='Brother Ni', style='width:100%')
+                //      .w3-container
+                //        h3 周二周四晚上 "速读圣经"
+                //        p.w3-opacity 时间：20:00PM ～ 21:00PM PST
+                //        //a(href='https://us06web.zoom.us/j/2951264737?pwd=TKsvRrT6rZ3u4opAvAhaM06xS9wEmj.1&omn=88274732200') 点击进入ZOOM
+                //        p.w3-opacity
+            // Contact
+
+            #contact.w3-padding-64
+                .w3-center.w3-padding-64
+                    span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
+                .w3-center.w3-margin-bottom
+                    .w3-center.w3-card-6
+                        p.w3-opacity
+                            a(href='https://forms.gle/Bsvrer4Zd3NxHAwt9') 跳转到Google Sheet中填写
+                //.w3-half.w3-margin-bottom
+                //  ul.w3-ul.w3-center.w3-hover-shadow
+                //    a(href='https://www.Facebook.........')
+                //      img(alt='Facebook' src='https://static.wixstatic.com/media/4057345bcf57474b96976284050c00df.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4057345bcf57474b96976284050c00df.png' style='width: 39px; height: 39px; object-fit: cover;')
+                //    a(href='https://www.youtube.........')
+                //      img(alt='youtube' src='https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png' style='width: 39px; height: 39px; object-fit: cover;')
+                //    a(href='https://www.instagram.........')
+                //      img(alt='instagram' src='https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png' style='width: 39px; height: 39px; object-fit: cover;')
+                //    a(href='https://www.wechat.........')
+                //      img(alt='wechat' src='https://static.wixstatic.com/media/5728cf_2218328feec545dea230f703a0cba800~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5728cf_2218328feec545dea230f703a0cba800~mv2.png' style='width: 39px; height: 39px; object-fit: cover;')
 
 
-    //Footer
-    footer.w3-container.w3-padding-32.w3-light-grey.w3-center
-      // h4 Footer
-      a.w3-btn.w3-padding.w3-black.w3-margin(href='#')
-        i.fa.fa-arrow-up.w3-margin-right
-        | 回到顶部
-      p
-        | ©
-        b 2024 Church of God in SF Bay Area
-    script.
+            //#contact.w3-center.w3-padding-64
+            //  span.w3-xlarge.w3-bottombar.w3-border-dark-grey.w3-padding-16 联系我们
+            //form.w3-container
+            //  .w3-group
+            //    label#labelFullName 姓名(*)
+            //    input#inputFullName.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Name', required='')
+            //  .w3-group
+            //    label#labelEmail 邮箱 (*)
+            //    input#inputEmail.w3-input.w3-border.w3-hover-border-black(style='width:100%;', type='text', name='Email', required='')
+            //  .w3-group
+            //    label#labelPhone 电话
+            //    input#inputPhone.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Phone')
+            //  .w3-group
+            //    label#labelMessage 留言
+            //    input#inputMessage.w3-input.w3-border.w3-hover-border-black(style='width:100%;', name='Message')
+            //  button#submitContact.w3-btn.w3-btn-block.w3-padding-12(type='button') 发送
 
 
-      // Slideshow
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      function plusDivs(n) {
-      showDivs(slideIndex += n);
-      }
-      function currentDiv(n) {
-      showDivs(slideIndex = n);
-      }
-      function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demodots");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length} ;
-      for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " w3-white";
-      }
+        //Footer
+        footer.w3-container.w3-padding-32.w3-light-grey.w3-center
+            // h4 Footer
+            a.w3-btn.w3-padding.w3-black.w3-margin(href='#')
+                i.fa.fa-arrow-up.w3-margin-right
+                | 回到顶部
+            p
+                | ©
+                b 2024 Church of God in SF Bay Area
+        script.
 
-      var slideIndex = 0;
-      carousel();
 
-      function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 15000); // Change image every 15 seconds
-      }
+            // Slideshow
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            function currentDiv(n) {
+                showDivs(slideIndex = n);
+            }
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demodots");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" w3-white", "");
+                }
+                x[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " w3-white";
+            }
 
-    script(src='/jqueryscripts/jquery.min.js')
-    script(src='/javascripts/main.js')
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 15000); // Change image every 15 seconds
+            }
+
+        script(src='/jqueryscripts/jquery.min.js')
+        script(src='/javascripts/main.js')
